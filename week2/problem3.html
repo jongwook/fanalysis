@@ -1,0 +1,37 @@
+To show the uniqueness of the solution of $$f(x) = x$$, suppose that there are two different solution $$l_1, l_2$$, then
+<br>
+<br>$$d(l_1, l_2) = d(f(l_1), f(l_2)) \leq K d(l_1, l_2) $$.
+<br>
+<br>Since $$l_1 \neq l_2$$ implies $$d(l_1, l_2) \neq 0$$, we have $$K \geq 1$$ which contradicts that $$f$$ is a contradiction: $$K &lt; 1$$.
+<br>
+
+<br>
+<br>For any $$m &gt; n$$, using the triangle inequality gives:
+<br>
+<br>$$
+<br>\begin{eqnarray}
+<br>d(x_n , x_m) &amp; \leq &amp; d(x_n, x_{n+1}) + d(x_{n+1}, x_{n+2}) + \cdots + d(x_{m-1}, x_m) \\
+<br>&amp; \leq &amp; K^n d(x_0, x_1) + K^{n+1}&nbsp;d(x_0, x_1)&nbsp;+ \cdots + K^{m-1}&nbsp;d(x_0, x_1)&nbsp;\\
+<br>&amp; = &amp; (K^n + K^{n+1} + \cdots + K^{m-1})&nbsp;d(x_0, x_1) \\
+<br>&amp; \leq &amp; (K^n + K^{n+1} + \cdots + K^{m-1} + K^m + \cdots)&nbsp;d(x_0, x_1) \\
+<br>&amp; = &amp; \frac {K^n} {1-K} d(x_0, x_1) \\
+<br>\end{eqnarray}
+<br>$$
+<br>
+<br>For any $$\epsilon &gt; 0$$, we can choose $$N$$ such that $$\frac {K^n} {1-K} d(x_0, x_1) &lt; \epsilon$$, then for any $$m &gt; n &gt; N$$ we have
+<br>
+<br>$$d(x_n , x_m)&nbsp;\leq&nbsp;\frac {K^n} {1-K} d(x_0, x_1) &lt; \epsilon$$, therefore $$(x_n)$$ is a Cauchy sequence, and since $$X$$ is complete, $$(x_n)$$ converges to a point $$l \in X$$.
+<br>
+<br>
+<br>$$f$$ is continuous, since if $$K = 0$$ then $$f$$ is constant, and if $$K &gt; 0$$ then for any $$\epsilon &gt; 0$$ we can pick $$\delta = \epsilon / K$$ and
+<br>
+<br>$$d(x, x') &lt; \delta \; \Rightarrow \; d(f(x), f(x')) \leq K d(x, x') &lt; K \delta = \epsilon$$, so $$f$$ is uniformly continuous, therefore continuous.
+<br>
+<br>
+<br>From $$f$$ being continuous we have $$x_n \rightarrow l \Rightarrow f(x_n) \rightarrow f(l)$$. Meanwhile $$f(x_n) = x_{n+1}$$ also converges $$l$$,
+<br>
+<br>Therefore from the uniqueness of limits we have $$f(l) = l$$.
+<br>
+<br>
+<br>$$\therefore \;$$ There exists $$l \in X$$ such that $$(x_n)$$ converges to $$l$$ and $$l$$ is the unique solution to equation $$f(x) = x$$.
+

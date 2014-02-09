@@ -1,0 +1,13 @@
+For given $$\epsilon > 0$$, take $$ N = \left \lceil \frac 1 {\epsilon} \right \rceil $$, then for all $$n > N$$, 
+
+$$ d \left ( \frac 1 {n^3} , 0 \right ) = \left | \frac 1 {n^3} - 0 \right | = \large \left | \frac 1 {n^3} \right | \le \left | \frac 1 n \right | < \epsilon $$.
+
+Therefore the sequence $$\left(\frac 1 {n^3}\right)_{n \in \mathbb{N}}$$ converges to 0 in $$\mathbb{R}$$ when $$n \rightarrow +\infty$$.
+
+
+The sequence $$\begin{pmatrix} \frac 1 n \\ \frac 1 {n^2} \end{pmatrix}_{n \in \mathbb{N}}$$ converges to $$(0, 0)$$ in $$\mathbb{R}^2$$ since for given $$\epsilon > 0$$ we can take $$ N = \left \lceil \frac 1 {\epsilon} \right \rceil $$, then
+
+$$ d \left ( \begin{pmatrix} \frac 1 n \\ \frac 1 {n^2} \end{pmatrix} , \begin{pmatrix} 0 \\ 0 \end{pmatrix} \right ) = \max \left ( \frac 1 n , \frac 1 {n^2} \right ) = \frac 1 n < \epsilon $$
+
+where we used the distance function $$d_{\infty} ((x_1, y_1), (x_2, y_2)) = \left | \left| (x_1 - x_2, y_1 - y_2) \right | \right | _{\infty} = \max ( |x_1 - x_2| , |y_1 - y_2| ) $$, since all norms are equivalent in finite dimensional space $$\mathbb{R}$$, the limit is unchanged.
+

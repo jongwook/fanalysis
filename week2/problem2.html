@@ -1,0 +1,15 @@
+$$d$$ is a distance function since:
+<br>
+<ul>
+    <li>For all $$(x, y) \in E \times E$$, $$d(x, y) \ge 0$$, because the number of letters that differ is obviously zero or more.
+        <br>
+    </li>
+    <li>For all&nbsp;$$(x, y) \in E \times E$$, $$d(x, y) = 0 \Leftrightarrow x = y$$,
+        <br>since if the number of letters that differ is zero then two words have to be the same,&nbsp;
+        <br>and if the two words are the same then the number of letters that differ are zero.</li>
+    <li>For all&nbsp;$$(x, y) \in E \times E$$, $$d(x, y) = d(y, x)$$,
+        <br>since the number of letters that differ between two words are the same regardless of the order of two words,</li>
+    <li>For all&nbsp;$$(x, y, z) \in E \times E \times E$$, $$d(x, y) \le d(x, z) + d(z, y)$$,
+        <br>because if $$d(x, z) + d(z, y) &lt; d(x, y)$$, then we can alter $$d(x, z) + d(z, y)$$ letters to change $$x$$ from $$y$$ by going from $$x$$ to $$z$$ and then $$y$$, which contradicts&nbsp;$$d(x, z) + d(z, y) &lt; d(x, y)$$.&nbsp;&nbsp;</li>
+</ul>
+
